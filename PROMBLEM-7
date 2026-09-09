@@ -1,0 +1,21 @@
+class Solution {
+    public int reverse(int x) {
+        int a=x;
+        int rev=0;
+
+        while(x!=0){
+            int c=x%10;
+             rev=rev*10+c;
+             x=x/10;
+        }
+        if(a<0){
+            int b=-rev;
+            return(rev);
+    
+        }
+        else{
+            return(rev);
+        }
+        
+    }
+}
