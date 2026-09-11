@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class kathir {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       String c=sc.nextLine();
+       int l=c.length();
+        char[] a = c.toCharArray();
+
+        char temp = a[0];
+        a[0] = a[l-1];
+        a[l-1] = temp;
+
+        System.out.println(a);
+    }
+}
